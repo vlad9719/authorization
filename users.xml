@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<users>
+    <user>
+        <login>vlad9</login>
+        <name>Vlad</name>
+        <email>v.dolgoshey@gmail.com</email>
+        <password>9640a821d18192dafe9d24276bf6e444c23430a7</password>
+    </user>
+    <user>
+        <login>test</login>
+        <name>test</name>
+        <email>test@mail.com</email>
+        <password>e692e179fbdf69acda91ca73a115360ab7668e40</password>
+    </user>
+</users>
