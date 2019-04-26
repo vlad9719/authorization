@@ -1,5 +1,7 @@
 <?php
 
+include 'returnErrorMessages.php';
+
 header('Content-Type: application/json');
 $response = [];
 $errors = [];
@@ -34,10 +36,7 @@ foreach ($users as $user) {
 }
 
 if (!empty($errors)) {
-    http_response_code(400);
-    $response['errors'] = $errors;
-    echo json_encode($response);
-    die();
+    returnErrorMessage($errors);
 }
 
 $user = $users->addChild('user');

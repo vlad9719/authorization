@@ -1,23 +1,22 @@
 $(document).ready(() => {
 
-    $('.registration-form').submit(function (event) {
+    $('.login-form').submit(function (event) {
         event.preventDefault();
 
         removeErrorMessages();
 
-        const inputs = $(".registration-form input:not([type='submit'])");
+        const inputs = $(".login-form input:not([type='submit'])");
         let userData = {};
         $.each(inputs, function(key, input) {
             userData[input.name] = input.value;
         });
 
         $.ajax({
-            url: '../php/register.php',
+            url: '../php/login.php',
             type: 'POST',
             data: {...userData},
-            success: function(){
-                alert('You are succesfully registered!');
-                window.location.href = "login.html";
+            success: function(response){
+                alert('You are succesfully logged in');
             },
             error: function(error) {
                 const errors = error.responseJSON.errors;
