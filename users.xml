@@ -1,9 +1,3 @@
 <?xml version="1.0"?>
 <users>
-    <user>
-        <login>test</login>
-        <name>test</name>
-        <email>test@mail.com</email>
-        <password>f70517f782ed448bf7b69cba78bbfb8d025ab9ac</password>
-    </user>
-</users>
+<user><login>test</login><name>test</name><email>test@mail.com</email><password>f70517f782ed448bf7b69cba78bbfb8d025ab9ac</password></user><user><login>test1</login><name>test1</name><email>test1@mail.com</email><password>f70517f782ed448bf7b69cba78bbfb8d025ab9ac</password></user><user><login>test2</login><name>test2</name><email>test2@mail.com</email><password>e012dfa14da0c9b804f5aa326bbe034cbbc27de9</password></user></users>
